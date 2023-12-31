@@ -1,0 +1,8 @@
+python==3.11
+keras==2.15.0
+matplotlib==3.8.2
+numpy==1.26.2
+pandas==2.1.4
+scikit_learn==1.3.2
+tensorflow==2.15.0
+yfinance==0.2.33
