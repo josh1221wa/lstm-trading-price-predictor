@@ -39,28 +39,27 @@ This command will install all the necessary packages listed in the `requirements
 
 ### 1.  Get the Data
 
-    The first step, of course, was to gather the data needed for training the model. I chose to use the popular currency Bitcoin and its historical closing price data. The source for this data was Yahoo Finance, which you can access it at htps://finance.yahoo.com/quote/BTC-USD/history?p=BTC-USD
+The first step, of course, was to gather the data needed for training the model. I chose to use the popular currency Bitcoin and its historical closing price data. The source for this data was Yahoo Finance, which you can access it at htps://finance.yahoo.com/quote/BTC-USD/history?p=BTC-USD
 
-    The yfinance library made it very easy to retrieve the desired data. I simply passed in the ticker symbol for Bitcoin, as well as the desired start and end dates for the data. In this case, I requested all available Bitcoin data from the beginning of its records.
+The yfinance library made it very easy to retrieve the desired data. I simply passed in the ticker symbol for Bitcoin, as well as the desired start and end dates for the data. In this case, I requested all available Bitcoin data from the beginning of its records.
 
 ### 2. Data Visualization
 
-    Next, I shifted my focus to visualizing the closing price of Bitcoin over time. To achieve this, I employed the matplotlib library for plotting the data.
+Next, I shifted my focus to visualizing the closing price of Bitcoin over time. To achieve this, I employed the matplotlib library for plotting the data.
 
 ### 3. Data Preprocessing
 
-    In this step, I cleaned up the dataset, converting the index Date column to the right format, filtering out all unnecessary columns,
-    removing incomplete data and scaling the dataset to get the best accuracy from training
+In this step, I cleaned up the dataset, converting the index Date column to the right format, filtering out all unnecessary columns, removing incomplete data and scaling the dataset to get the best accuracy from training
 
 ### 4. Model Building
 
-    Continuing, I built the model that would be trained with the data. I used multiple layers of LSTM and Dense from keras to correctly filter the unnecessary data out of the neural network.
+Continuing, I built the model that would be trained with the data. I used multiple layers of LSTM and Dense from keras to correctly filter the unnecessary data out of the neural network.
 
 ### 5. Model Testing
 
-    Moving forward, I tested the model using the remaining testing data that I had kept aside and checked the mean absolute error to confirm the accuracy of my model. 
+Moving forward, I tested the model using the remaining testing data that I had kept aside and checked the mean absolute error to confirm the accuracy of my model. 
 
-    To visualize its accuracy better I plotted the predicted data in a graph along with the test data to show the pattern followed by both graphs were alike. 
+To visualize its accuracy better I plotted the predicted data in a graph along with the test data to show the pattern followed by both graphs were alike. 
 
 ## Results
 
